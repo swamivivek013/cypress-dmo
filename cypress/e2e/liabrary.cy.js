@@ -14,7 +14,8 @@ describe('testing-liabrary', () => {
         cy.findByText(/checkout/i).click()
         cy.findByRole('button', { name: /checkout/i }).click()
         cy.findByRole('textbox' ).type('india')
-        cy.log("country added")
+        cy.log("country name entered")
+        
 
         cy.findByText('India',{ timeout: 5000}).click()
 
